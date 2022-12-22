@@ -42,7 +42,6 @@ const Answer = () => {
       setCheckedSelect((prev) => prev.filter((item) => item !== id));
     }
   };
-  // console.log(activeVariantId);
 
   const onClickBtnNext = () => {
     if (activeVariant !== null) {

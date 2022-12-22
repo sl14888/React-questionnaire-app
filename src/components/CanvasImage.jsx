@@ -125,7 +125,7 @@ const CanvasImage = () => {
   return (
     <>
       <canvas
-        className="canvasImage w-1/2"
+        className="canvasImage md:w-1/2 w-3/4"
         ref={cnv}
         width="1400px"
         height="1300px"

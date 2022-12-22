@@ -41,11 +41,11 @@ const FinalScreen = () => {
           <div className="grid h-full justify-items-center">
             <CanvasImage />
             {/* <img className="w-4/6" src={carpetResult} alt="carpet result" /> */}
-            <div className="font-bold text-2xl pt-5">
+            <p className="font-bold md:text-2xl text-xl pt-5 text-center">
               Поздравляем с успешным прохождением теста!!!🎉🎉🎉🎉
-            </div>
+            </p>
             <Result />
-            <p className="font-medium text-xl text-justify py-5 mx-28">
+            <p className="font-medium text-xl text-justify py-5 mx-2">
               Используя различные методики можно составить психологический портрет
               личности человека, даже не зная его. Такие портреты личности часто
               используют при приеме на работу, даже в брачных агенствах для подбора пары.
@@ -54,10 +54,10 @@ const FinalScreen = () => {
               иной деятельности, виды мотивации и т.д. На основе полученных данных можно
               сделать общее заключение о человеке и дать определенные рекомендации.
             </p>
-            <div className="flex my-5">
-              <div className="mr-5">
+            <div className="flex flex-col md:flex-row w-full my-5">
+              <div className="mr-5 mb-5 w-full">
                 <button
-                  className="w-52 h-12 bg-green-400 transition duration-500 cursor-pointer rounded-lg focus:ring-2  hover:bg-green-700 focus:ring-opacity-50 ring-inset"
+                  className="md:w-52 h-12 w-full bg-green-400 transition duration-500 cursor-pointer rounded-lg focus:ring-2  hover:bg-green-700 focus:ring-opacity-50 ring-inset"
                   onClick={() => onReloadBtn()}
                 >
                   Начать тест сначала
@@ -65,7 +65,7 @@ const FinalScreen = () => {
               </div>
               <div>
                 <button
-                  className="w-52 h-12 bg-green-400 transition duration-500 cursor-pointer rounded-lg focus:ring-2  hover:bg-green-700 focus:ring-opacity-50 ring-inset"
+                  className="md:w-52 h-12 w-full bg-green-400 transition duration-500 cursor-pointer rounded-lg focus:ring-2  hover:bg-green-700 focus:ring-opacity-50 ring-inset"
                   onClick={() => onReturnBtn()}
                 >
                   Вернуться на главную

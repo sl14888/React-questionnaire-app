@@ -10,15 +10,29 @@ function Header() {
 
   return (
     <header className="header">
-      <input className="hbr peer" type="checkbox" hidden aria-hidden="true" />
-      <nav className="fixed z-20 w-full bg-gray-900/80 backdrop-blur navbar shadow-2xl shadow-gray-600/5 border-b border-gray-900/5 peer-checked:navbar-active dark:shadow-none">
+      <nav className="fixed z-20 w-full p-5 bg-gray-900/80 backdrop-blur navbar shadow-2xl shadow-gray-600/5 border-b border-gray-900/5 peer-checked:navbar-active dark:shadow-none">
         <div className="container mx-auto">
-          <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0 lg:py-5">
+          <div className="flex flex-wrap items-center justify-between gap-6">
             <Link to="/">
-              <div className="animate__animated  animate__fadeInDown animate__delay-0.5s w-full text-green-400 items-center flex justify-between lg:w-auto">
+              <div className="animate__animated  animate__fadeInDown animate__delay-0.5s w-full text-green-400 items-center flex justify-between">
                 ORNAMENT UM
               </div>
             </Link>
+            {/* <svg
+              xmlns="<http://www.w3.org/2000/svg>"
+              id="menu-button"
+              className="h-6 w-6 cursor-pointer md:hidden block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg> */}
             <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
               <div className="text-gray-600 dark:text-gray-300 lg:pr-4">
                 <ul className="space-y-6 tracking-wide font-medium text-base lg:text-sm lg:flex lg:space-y-0">

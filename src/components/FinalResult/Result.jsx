@@ -5,11 +5,11 @@ import { addSelectedSrc } from '../../slices/QuestionSlice';
 
 const Result = () => {
   const selectedQuestions = useSelector((state) => state.question.selectedQuestions);
-  const stepQuestion = useSelector((state) => state.question.stepQuestion);
-  const question = QuestionItems[stepQuestion];
+  // const stepQuestion = useSelector((state) => state.question.stepQuestion);
+  // const question = QuestionItems[stepQuestion];
   const dispatch = useDispatch();
 
-  const [show, setShow] = React.useState(false);
+  // const [show, setShow] = React.useState(false);
 
   let testArray = [];
 
@@ -25,9 +25,9 @@ const Result = () => {
       {selectedQuestions.map((result, index) => {
         return (
           <div className="flex pt-2" key={index}>
-            <div className="text-xl font-medium">{result.title}</div>
+            <div className="text-xl font-medium">{result.title}:</div>
             <div className="flex">
-              <p className="text-xl pl-2 px-3">: {result.variant}</p>
+              <p className="text-xl pl-2 px-3"> {result.variant}</p>
               {selectedQuestions[index].select.map((selectItem, selectIndex) => (
                 <p className=" text-lg px-1" key={selectIndex}>
                   {selectItem}
